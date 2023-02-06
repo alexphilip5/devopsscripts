@@ -1,4 +1,4 @@
-! /bin/bash
+#! /bin/bash
 #Installing all the dependencies
 set -x
 yum -y groupinstall "Development Tools"
