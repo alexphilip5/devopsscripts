@@ -20,3 +20,7 @@ sleep 10 m
 # Installing git
 yum install git -y
 sleep 1 m
+git clone git@github.com:alexphilip5/pythonscript.git
+cd pythonscript/
+chmod u+x *
+python3 icd_scrap_script_for_lambda.py &
