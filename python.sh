@@ -20,8 +20,15 @@ sleep 10 m
 # Installing git
 yum install git -y
 sleep 1 m
+# Running python script
+echo "========Running python script=========="
 git clone git@github.com:alexphilip5/pythonscript.git
 cd pythonscript/
-pip install requirements.txt
+pip -r install requirements.txt
 chmod u+x *
 python3 icd_scrap_script_for_lambda.py &
+echo "ICD Script ran successfully"
+python3 facility_script.py &
+echo "Facilitator Script ran successfully"
+python3 provider_script.py &
+echo "Provider Script ran successfully"
